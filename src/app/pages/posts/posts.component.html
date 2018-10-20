@@ -1,0 +1,6 @@
+<div *ngFor="let post of postData">
+<ul>
+  <li>{{post.title}}</li>
+</ul>
+<a [routerLink]="['/posts', post.id]">See More...</a>
+</div>
